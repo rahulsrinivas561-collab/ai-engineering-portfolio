@@ -1,38 +1,46 @@
-AI Engineering & Generative AI Portfolio
+# 🚀 AI Engineering & Generative AI Portfolio
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-engineering-portfolio-561.streamlit.app/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Groq](https://img.shields.io/badge/Groq-LLM-orange.svg)](https://groq.com/)
+
 A production-grade collection of generative AI applications, autonomous multi-agent systems, Retrieval-Augmented Generation (RAG) pipelines, and interactive financial intelligence tools built using Python, Groq LLMs, and Streamlit.
 
-Key Projects & Architecture
-1. Interactive Fintech AI App (fintech_app.py)
-Description: An interactive Streamlit web application designed for financial data analysis, live market query handling, and conversational intelligence.
+> 🌐 **Live Demo:** [Explore the Interactive Fintech AI App](https://ai-engineering-portfolio-561.streamlit.app/)
 
-Key Features: Clean UI state management, real-time response generation, and structured financial query processing.
+---
 
-2. Autonomous Multi-Agent Systems (super_agent.py & ai_agent.py)
-Description: Specialized multi-agent architectures capable of multi-step task execution, automated reasoning loops, and tool orchestration.
+## 🏗️ Key Projects & Architecture
 
-Key Features: Structured tool-calling execution, robust exception handling, and low-latency inference.
+### 1. Interactive Fintech AI App (`fintech_app.py`)
+* **Description:** An interactive Streamlit web application designed for financial data analysis, live market query handling, and conversational intelligence.
+* **Key Features:** Clean UI state management, real-time response generation, and structured financial query processing.
 
-3. Retrieval-Augmented Generation Pipeline (rag_pipeline.py)
-Description: A vector-backed knowledge retrieval system designed to ground LLM responses in factual, domain-specific document contexts.
+### 2. Autonomous Multi-Agent Systems (`super_agent.py` & `ai_agent.py`)
+* **Description:** Specialized multi-agent architectures capable of multi-step task execution, automated reasoning loops, and tool orchestration.
+* **Key Features:** Structured tool-calling execution, robust exception handling, and low-latency inference.
 
-Key Features: Local vector embedding storage (ChromaDB), efficient context injection, and precise document chunking.
+### 3. Retrieval-Augmented Generation Pipeline (`rag_pipeline.py`)
+* **Description:** A vector-backed knowledge retrieval system designed to ground LLM responses in factual, domain-specific document contexts.
+* **Key Features:** Local vector embedding storage (ChromaDB), efficient context injection, and precise document chunking.
 
-Tech Stack & Tools
-Core Language: Python
+---
 
-LLM & Inference: Groq API (High-speed LLM inference engine)
+## 🛠️ Tech Stack & Tools
 
-Frameworks & UI: Streamlit, Custom Agent Workflows
+* **Core Language:** Python
+* **LLM & Inference:** Groq API (High-speed LLM inference engine)
+* **Frameworks & UI:** Streamlit, Custom Agent Workflows
+* **Vector Database:** ChromaDB
+* **Configuration & Security:** `python-dotenv` (Environment-secured secret management)
+* **Version Control:** Git & GitHub
 
-Vector Database: ChromaDB
+---
 
-Configuration & Security: python-dotenv (Environment-secured secret management)
+## 📂 Repository Structure
 
-Version Control: Git & GitHub
-
-Repository Structure
-
-`ai_projects/
+```text
+ai_engineering_portfolio/
 │
 ├── fintech_app.py        # Streamlit financial intelligence dashboard
 ├── super_agent.py        # Advanced multi-agent orchestrator
