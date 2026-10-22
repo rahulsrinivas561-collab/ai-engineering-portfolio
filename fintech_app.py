@@ -1,10 +1,16 @@
 import os
 import json
 import pandas as pd
+import sys
+try:
+    __import__('pysqlite3')
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
+import streamlit as st
 import chromadb
 from dotenv import load_dotenv
 from groq import Groq
-import streamlit as st
 
 # 1. Load environment variables & Page Configuration
 load_dotenv()
