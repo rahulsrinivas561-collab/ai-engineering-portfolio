@@ -1,39 +1,67 @@
 import os
+import sys
+
+# SQLite compatibility fix for ChromaDB
+try:
+    __import__('pysqlite3')
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
+
 import chromadb
-from dotenv import load_dotenv
 from groq import Groq
+from dotenv import load_dotenv
 
-# 1. Load environment variables & Initialize Clients securely
 load_dotenv()
+api_key = os.getenv("GROQ_API_KEY")
 
-chroma_client = chromadb.Client()
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+if not api_key:
+    print("❌ Error: GROQ_API_KEY not found.")
+    sys.exit(1)
 
-# 2. Setup Vector Database
-collection = chroma_client.create_collection(name="company_kb")
-collection.add(
-    documents=[
-        "Project Alpha deadline is November 15, 2026.",
-        "The lead AI engineer on Project Alpha is Rahul.",
-        "Groq provides low-latency inference for real-time applications."
-    ],
-    ids=["id1", "id2", "id3"]
-)
+client = Groq(api_key=api_key)
 
-# 3. User Query
-user_query = "Who is leading Project Alpha and when is the deadline?"
+class ProductionRAGPipeline:
+    def __init__(self, collection_name="portfolio_knowledge_base"):
+        self.chroma_client = chromadb.PersistentClient(path="./chroma_db")
+        self.collection = self.chroma_client.get_or_create_collection(name=collection_name)
 
-# 4. Retrieve Context from ChromaDB
-search_results = collection.query(query_texts=[user_query], n_results=2)
-retrieved_context = " ".join(search_results['documents'][0])
+    def seed_documents(self):
+        """Seeds initial vector records if collection is empty."""
+        if self.collection.count() == 0:
+            documents = [
+                "The Fintech AI app uses Streamlit for interactive dashboards and Groq for high-speed inference.",
+                "ChromaDB is used as a local persistent vector database for Retrieval-Augmented Generation pipelines.",
+                "Production error handling in multi-agent systems ensures graceful degradation during rate limits."
+            ]
+            ids = ["doc1", "doc2", "doc3"]
+            self.collection.add(documents=documents, ids=ids)
+            print("✅ Vector database seeded with domain context.")
 
-# 5. Pass Context to LLM
-prompt = f"Context: {retrieved_context}\n\nQuestion: {user_query}\nAnswer:"
+    def query_rag(self, query: str, n_results: int = 2) -> dict:
+        results = self.collection.query(query_texts=[query], n_results=n_results)
+        retrieved_docs = results['documents'][0] if results['documents'] else []
+        context = "\n---\n".join(retrieved_docs)
+        
+        prompt = f"""You are a precise AI assistant. Answer the user query strictly using the provided context below.
 
-response = groq_client.chat.completions.create(
-    model="openai/gpt-oss-20b",
-    messages=[{"role": "user", "content": prompt}]
-)
+Context:
+{context}
 
-print("\n--- AI Answer ---")
-print(response.choices[0].message.content)
+User Query: {query}"""
+
+        completion = client.chat.completions.create(
+            model="openai/gpt-oss-20b",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.1
+        )
+        return {"query": query, "retrieved_context": retrieved_docs, "answer": completion.choices[0].message.content}
+
+if __name__ == "__main__":
+    rag = ProductionRAGPipeline()
+    rag.seed_documents()
+    
+    res = rag.query_rag("What is ChromaDB used for in this project?")
+    print("\n--- RAG Output ---")
+    print(f"Retrieved Context: {res['retrieved_context']}")
+    print(f"Grounded Answer: {res['answer']}")
