@@ -1,0 +1,21 @@
+Company,Sector,Quarter,Revenue_Millions,Net_Income_Millions,Total_Debt_Millions,Total_Equity_Millions,Operating_Cash_Flow_M,Default_Risk_Score
+TechCorp,SaaS,Q3-2026,450.5,85.2,120.0,350.0,110.4,0.12
+FinServe,Banking,Q3-2026,1200.0,310.0,850.0,1100.0,420.0,0.28
+HealthPlus,Healthcare,Q3-2026,310.2,42.0,210.0,180.0,55.0,0.45
+PayPulse,FinTech,Q3-2026,180.8,-15.4,95.0,110.0,-8.2,0.62
+CloudGrid,SaaS,Q3-2026,620.0,140.5,150.0,500.0,185.0,0.15
+EcoEnergy,CleanTech,Q3-2026,290.0,12.0,400.0,220.0,30.0,0.58
+RetailX,E-Commerce,Q3-2026,890.4,65.0,310.0,410.0,92.0,0.34
+BioGen,Healthcare,Q3-2026,150.0,-35.0,180.0,90.0,-22.0,0.75
+DataStream,SaaS,Q3-2026,340.0,55.0,80.0,250.0,70.0,0.18
+OmniBank,Banking,Q3-2026,1500.0,420.0,1100.0,950.0,510.0,0.35
+SecurePay,FinTech,Q3-2026,210.0,18.5,130.0,140.0,22.0,0.40
+MedTech Solutions,Healthcare,Q3-2026,410.0,78.0,160.0,300.0,95.0,0.22
+ApexLogistics,SupplyChain,Q3-2026,780.0,45.0,450.0,320.0,60.0,0.52
+CloudScale,SaaS,Q3-2026,950.0,210.0,200.0,800.0,290.0,0.10
+CapitalTrust,Banking,Q3-2026,1350.0,380.0,950.0,1050.0,460.0,0.30
+NovaRetail,E-Commerce,Q3-2026,540.0,22.0,280.0,200.0,35.0,0.48
+GreenPower,CleanTech,Q3-2026,380.0,-5.0,450.0,210.0,-12.0,0.68
+CyberShield,SaaS,Q3-2026,270.0,40.0,60.0,220.0,55.0,0.14
+ValueMart,E-Commerce,Q3-2026,1100.0,90.0,500.0,450.0,120.0,0.39
+AlphaHealth,Healthcare,Q3-2026,520.0,95.0,190.0,400.0,130.0,0.20
