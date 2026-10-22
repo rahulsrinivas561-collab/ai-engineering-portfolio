@@ -31,7 +31,7 @@ retrieved_context = " ".join(search_results['documents'][0])
 prompt = f"Context: {retrieved_context}\n\nQuestion: {user_query}\nAnswer:"
 
 response = groq_client.chat.completions.create(
-    model="llama-3.3-70b-versatile",
+    model="openai/gpt-oss-20b",
     messages=[{"role": "user", "content": prompt}]
 )
 
