@@ -2,11 +2,13 @@ import os
 import json
 import pandas as pd
 import sys
+
 try:
     __import__('pysqlite3')
     sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 except ImportError:
     pass
+
 import streamlit as st
 import chromadb
 from dotenv import load_dotenv
@@ -25,7 +27,8 @@ st.set_page_config(
 @st.cache_resource
 def init_clients():
     groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-    chroma_client = chromadb.Client()
+    # Use persistent client to align with project RAG storage
+    chroma_client = chromadb.PersistentClient(path="./chroma_db")
     collection = chroma_client.get_or_create_collection(name="fintech_audit_kb")
     
     # Pre-load sample financial audit notes into ChromaDB (RAG)
@@ -151,13 +154,13 @@ with tab2:
     if st.button("Search Audit Records", type="primary"):
         with st.spinner("Searching vector database..."):
             results = collection.query(query_texts=[rag_query], n_results=2)
-            retrieved_docs = results['documents'][0]
+            retrieved_docs = results['documents'][0] if results['documents'] else []
             
             # Generate grounded response
             rag_prompt = f"Answer the user question strictly using the following audit documents:\n\nDocuments:\n" + "\n".join(retrieved_docs) + f"\n\nQuestion: {rag_query}"
             
             completion = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="openai/gpt-oss-20b",
                 messages=[{"role": "user", "content": rag_prompt}]
             )
             
