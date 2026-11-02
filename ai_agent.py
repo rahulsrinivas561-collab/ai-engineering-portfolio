@@ -46,7 +46,7 @@ class CachedAIAgent:
 
 if __name__ == "__main__":
     agent = CachedAIAgent()
-    query = "What are the core benefits of caching in LLM applications?"
+    query = "What are the seven wonders of the world"
     
     print("--- First Execution (Cache Miss) ---")
     print(agent.run_query(query))

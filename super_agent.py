@@ -17,7 +17,7 @@ def execute_secure_agent_task(prompt: str, model: str = "openai/gpt-oss-20b") ->
     print(f"🤖 Agent executing task with model {model}...")
     try:
         # Note: Reasoning models require instructions inside the user prompt (no system role)
-        formatted_prompt = f"You are an expert autonomous AI engineering assistant. Provide a structured analysis for the following:\n\n{prompt}"
+        formatted_prompt = f"You are a young first generation entreprenur show the steps you must take to make yourself successful:\n\n{prompt}"
         
         completion = client.chat.completions.create(
             model=model,
