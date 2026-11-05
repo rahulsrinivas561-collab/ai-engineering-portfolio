@@ -50,31 +50,38 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 
 ## 📂 Repository Structure
 
+```text
 ai_engineering_portfolio/
 │
-├── app.py                           # Core application entry point & router
-├── fintech_app.py                   # Streamlit financial intelligence dashboard
-├── risk_dashboard.py                # Live risk and fraud analytics dashboard
+├── 📂 apps/                          # Production Web Dashboards & UI Entry Points
+│   ├── app.py                        # Core application router & configuration
+│   ├── fintech_app.py                # Streamlit conversational financial intelligence app
+│   └── risk_dashboard.py             # Live risk and fraud analytics dashboard
 │
-├── ai_agent.py                      # Core tool-calling agent implementation
-├── super_agent.py                   # Advanced multi-agent orchestrator
-├── fraud_mcp_server.py              # Model Context Protocol (MCP) server
-├── tool_calling.py                  # Function calling schemas and utilities
+├── 📂 agents/                        # Autonomous Multi-Agent & Tooling Systems
+│   ├── ai_agent.py                   # Core tool-calling agent implementation
+│   ├── super_agent.py                # Advanced multi-agent orchestrator framework
+│   ├── test_langgraph.py             # Stateful graph agent validation script
+│   ├── fraud_mcp_server.py           # Model Context Protocol (MCP) server integration
+│   └── tool_calling.py               # Function calling schemas and definitions
 │
-├── rag_pipeline.py                  # RAG retrieval and vector generation pipeline
-├── test_hybrid_search.py            # BM25 + ChromaDB Hybrid Search with RRF
-├── test_chroma.py                   # Vector store diagnostics and test script
-├── test_langgraph.py                # Stateful graph agent validation
-├── test_observability.py            # Langfuse LLM telemetry and tracing test
+├── 📂 retrieval/                     # Advanced RAG & Hybrid Search Pipelines
+│   ├── rag_pipeline.py               # Vector-backed RAG retrieval pipeline (ChromaDB)
+│   ├── test_hybrid_search.py         # BM25 + ChromaDB Hybrid Search with RRF
+│   └── test_chroma.py                # Vector store connectivity and diagnostics
 │
-├── generate_and_analyze_bigdata.py  # Big data generator and processing pipeline
-├── fraud_million_rows.parquet       # 1M+ row columnar dataset for performance testing
-├── fintech_portfolio.csv            # Financial portfolio sample dataset
+├── 📂 analytics/                     # Big Data Processing, Datasets & Observability
+│   ├── generate_and_analyze_bigdata.py # Synthetic dataset generator & batch pipeline
+│   ├── fraud_million_rows.parquet    # 1M+ row columnar dataset for performance testing
+│   ├── fintech_portfolio.csv         # Financial portfolio sample dataset
+│   └── test_observability.py         # Langfuse LLM telemetry and tracing test
 │
-├── test_ai.py                       # API connection and model validation script
-├── requirements.txt                 # Project dependencies
-├── .env.example                     # Template for environment variables
-└── README.md                        # Documentation
+├── 📂 config/                        # Environment Templates & Validation Scripts
+│   ├── test_ai.py                    # API connection and model validation check
+│   ├── requirements.txt              # Project dependencies list
+│   └── .env.example                  # Environment configuration template
+│
+└── README.md                         # Project documentation
 
 ## ⚙️ Getting Started & Installation Instructions
 
