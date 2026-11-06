@@ -1,5 +1,10 @@
 # Automated Logistics Intelligence & Cost Engine
 
+## Live Data Source & Dashboard
+
+You can inspect the live automated Google Sheet used by this pipeline here:
+- 📊 **[View-Only Logistics Cost Sheet](https://docs.google.com/spreadsheets/d/1aQVUsQM7RHC1ErKmYA8PTa_m75fRV8wQuDxmGeAww7o/edit?usp=sharing)**
+
 An end-to-end automated data pipeline and low-code system design built using **AppSheet**, **Google Apps Script**, **Python (Pandas & gspread)**, and **Google Sheets**.
 
 This project solves two key logistics workflows:
