@@ -2,9 +2,10 @@
 
 A production-grade collection of generative AI applications, autonomous multi-agent systems, hybrid Retrieval-Augmented Generation (RAG) pipelines, Model Context Protocol (MCP) servers, and interactive financial/risk intelligence dashboards built using Python, Groq LLMs, ChromaDB, LangGraph, and Streamlit.
 
-🌐 **Live Demos:** 
+🌐 **Live Demos & Data Sources:** 
 * [Interactive Fintech AI App](https://ai-engineering-portfolio-561.streamlit.app/) *(Live Streamlit Cloud Deployment)*
 * [Risk & Fraud Analytics Dashboard](https://ai-engineering-portfolio-riskdashboard561.streamlit.app/) *(Live Streamlit Cloud Deployment)*
+* 📊 **[View-Only Logistics Cost Sheet](https://docs.google.com/spreadsheets/d/1aQVUsQM7RHC1ErKmYA8PTa_m75fRV8wQuDxmGeAww7o/edit?usp=sharing)** *(Automated Freight Cost & AppSheet Backend Data)*
 
 ---
 
@@ -32,6 +33,10 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 * **Description:** Production Model Context Protocol (MCP) server implementation and Langfuse LLM telemetry integration.
 * **Key Features:** Secure tool endpoint exposure, token cost tracking, and execution latency tracing.
 
+### 6. Automated Logistics Cost Engine (`logistics_cost_engine/`)
+* **Description:** An end-to-end operational pipeline automating freight cost calculations, shipment tracking, and location logging across Google Apps Script, AppSheet, and Python.
+* **Key Features:** Vectorized transactional cost computations using Pandas, Google Sheets/Drive API automation, and real-time AppSheet operational synchronization.
+
 ---
 
 ## 🛠️ Tech Stack & Tools
@@ -40,7 +45,8 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 * **LLM & Inference:** Groq API (High-speed Llama 3 inference engine)
 * **Agent Frameworks & Protocols:** LangGraph, Model Context Protocol (MCP), Custom Tool-Calling
 * **Vector Database & Search:** ChromaDB, BM25, Reciprocal Rank Fusion (RRF)
-* **Data Engineering & Big Data:** Pandas, NumPy, Apache Parquet (1M+ rows)
+* **Data Engineering & Cloud Services:** Pandas, NumPy, Apache Parquet (1M+ rows), **Google Cloud APIs (Google Sheets API, Google Drive API)**
+* **Low-Code, Automation & Scripting:** **Google Apps Script**, AppSheet, Low-Code Frontend Logic
 * **Observability & Tracing:** Langfuse
 * **Frameworks & UI:** Streamlit, Plotly
 * **Configuration & Security:** `python-dotenv` (Environment-secured secret management)
@@ -50,38 +56,37 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 
 ## 📂 Repository Structure
 
-```text
 ai_engineering_portfolio/
 │
-├── 📂 apps/                          # Production Web Dashboards & UI Entry Points
-│   ├── app.py                        # Core application router & configuration
-│   ├── fintech_app.py                # Streamlit conversational financial intelligence app
-│   └── risk_dashboard.py             # Live risk and fraud analytics dashboard
+├── app.py                           # Core application entry point & router
+├── fintech_app.py                   # Streamlit financial intelligence dashboard (Project 1)
+├── risk_dashboard.py                # Live risk and fraud analytics dashboard
 │
-├── 📂 agents/                        # Autonomous Multi-Agent & Tooling Systems
-│   ├── ai_agent.py                   # Core tool-calling agent implementation
-│   ├── super_agent.py                # Advanced multi-agent orchestrator framework
-│   ├── test_langgraph.py             # Stateful graph agent validation script
-│   ├── fraud_mcp_server.py           # Model Context Protocol (MCP) server integration
-│   └── tool_calling.py               # Function calling schemas and definitions
+├── logistics_cost_engine/           # Freight cost calculation engine & Google APIs integration
+│   ├── shipment_cost_calculator.py  # Python vectorized shipping cost engine
+│   └── README.md                    # Project-specific documentation & setup guide
 │
-├── 📂 retrieval/                     # Advanced RAG & Hybrid Search Pipelines
-│   ├── rag_pipeline.py               # Vector-backed RAG retrieval pipeline (ChromaDB)
-│   ├── test_hybrid_search.py         # BM25 + ChromaDB Hybrid Search with RRF
-│   └── test_chroma.py                # Vector store connectivity and diagnostics
+├── ai_agent.py                      # Core tool-calling agent implementation
+├── super_agent.py                   # Advanced multi-agent orchestrator
+├── fraud_mcp_server.py              # Model Context Protocol (MCP) server
+├── tool_calling.py                  # Function calling schemas and utilities
 │
-├── 📂 analytics/                     # Big Data Processing, Datasets & Observability
-│   ├── generate_and_analyze_bigdata.py # Synthetic dataset generator & batch pipeline
-│   ├── fraud_million_rows.parquet    # 1M+ row columnar dataset for performance testing
-│   ├── fintech_portfolio.csv         # Financial portfolio sample dataset
-│   └── test_observability.py         # Langfuse LLM telemetry and tracing test
+├── rag_pipeline.py                  # RAG retrieval and vector generation pipeline
+├── test_hybrid_search.py            # BM25 + ChromaDB Hybrid Search with RRF
+├── test_chroma.py                   # Vector store diagnostics and test script
+├── test_langgraph.py                # Stateful graph agent validation
+├── test_observability.py            # Langfuse LLM telemetry and tracing test
 │
-├── 📂 config/                        # Environment Templates & Validation Scripts
-│   ├── test_ai.py                    # API connection and model validation check
-│   ├── requirements.txt              # Project dependencies list
-│   └── .env.example                  # Environment configuration template
+├── generate_and_analyze_bigdata.py  # Big data generator and processing pipeline
+├── fraud_million_rows.parquet       # 1M+ row columnar dataset for performance testing
+├── fintech_portfolio.csv            # Financial portfolio sample dataset
 │
-└── README.md                         # Project documentation
+├── test_ai.py                       # API connection and model validation script
+├── requirements.txt                 # Project dependencies
+├── .env.example                     # Template for environment variables
+└── README.md                        # Main documentation
+
+---
 
 ## ⚙️ Getting Started & Installation Instructions
 
@@ -91,7 +96,6 @@ Anyone who wants to clone, set up, and run this repository locally can execute t
 
 ```bash
 git clone [https://github.com/rahulsrinivas561-collab/ai-engineering-portfolio.git](https://github.com/rahulsrinivas561-collab/ai-engineering-portfolio.git)
-
 cd ai-engineering-portfolio
 
 Step 2: Set Up Virtual Environment & Install Dependencies
@@ -114,7 +118,6 @@ Create a file named .env in the root folder and add your API keys:
 GROQ_API_KEY=your_actual_groq_api_key_here
 LANGFUSE_PUBLIC_KEY=your_langfuse_public_key_here
 LANGFUSE_SECRET_KEY=your_langfuse_secret_key_here
-
 
 
 
