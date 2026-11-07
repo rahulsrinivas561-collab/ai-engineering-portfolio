@@ -5,7 +5,7 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 🌐 **Live Demos & Data Sources:** 
 * [Interactive Fintech AI App](https://ai-engineering-portfolio-561.streamlit.app/) *(Live Streamlit Cloud Deployment)*
 * [Risk & Fraud Analytics Dashboard](https://ai-engineering-portfolio-riskdashboard561.streamlit.app/) *(Live Streamlit Cloud Deployment)*
-* 📊 **[View-Only Logistics Cost Sheet](https://docs.google.com/spreadsheets/d/1aQVUsQM7RHC1ErKmYA8PTa_m75fRV8wQuDxmGeAww7o/edit?usp=sharing)** *(Automated Freight Cost & AppSheet Backend Data)*
+* 📊 **[Logistics Cost Sheet](https://docs.google.com/spreadsheets/d/1aQVUsQM7RHC1ErKmYA8PTa_m75fRV8wQuDxmGeAww7o/edit?usp=sharing)** *(Automated Freight Cost & AppSheet Backend Data)*
 
 ---
 
