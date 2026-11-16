@@ -1,0 +1,615 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.124.2028.0 (23.12)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Dim_Merchant\",\"Dim_User\",\"Fact_Transactions\",\"_Measures\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\",\"MCP-PBIModeling\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "1cc8cd50-217e-480c-a887-235bce103e0c",
+        "fromColumn": "merchant_id",
+        "fromTable": "Fact_Transactions",
+        "toColumn": "merchant_id",
+        "toTable": "Dim_Merchant"
+      },
+      {
+        "name": "6199b9c2-aa9e-4d0b-b629-af173fa3a283",
+        "fromColumn": "user_id",
+        "fromTable": "Fact_Transactions",
+        "toColumn": "user_id",
+        "toTable": "Dim_User"
+      },
+      {
+        "name": "d7d39b07-d7dc-4b39-a68e-3acdc1323ff0",
+        "fromColumn": "txn_date",
+        "fromTable": "Fact_Transactions",
+        "toColumn": "Date",
+        "toTable": "Dim_Date"
+      }
+    ],
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "Dim_Merchant",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "merchant_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4e71f29f-32f5-4851-8b85-2b8d7a9ea4f4",
+            "sourceColumn": "merchant_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "merchant_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e9fdb48f-6cbb-40b7-b2a1-a2bfe5b3a98c",
+            "sourceColumn": "merchant_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "94c64959-1e1b-4a39-bd62-4aa63ded62ad",
+            "sourceColumn": "category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d7cff61-8787-4ee5-a460-a7603c624e6c",
+            "sourceColumn": "city",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ba3a0ae3-d700-4126-b2d1-06c92997c2ef",
+        "partitions": [
+          {
+            "name": "Dim_Merchant",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\gutsy innovation\\Python\\Python_Sessions\\ai_projects\\powerbi_fraud_risk_mcp\\data\\Dim_Merchant.csv\"),[Delimiter=\",\", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"merchant_id\", Int64.Type}, {\"merchant_name\", type text}, {\"category\", type text}, {\"city\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dim_User",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "user_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9da80ea3-5ebb-4dd8-a9ae-0199989dfbc3",
+            "sourceColumn": "user_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "account_tier",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "89f6f6d5-106c-47c4-8394-d6bea38b0801",
+            "sourceColumn": "account_tier",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "kyc_verified",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "d871a105-05f7-4f98-bc44-4fa79582eafc",
+            "sourceColumn": "kyc_verified",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e292ce75-b043-44e8-88a9-629440ef72b6",
+        "partitions": [
+          {
+            "name": "Dim_User",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\gutsy innovation\\Python\\Python_Sessions\\ai_projects\\powerbi_fraud_risk_mcp\\data\\Dim_User.csv\"),[Delimiter=\",\", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"user_id\", Int64.Type}, {\"account_tier\", type text}, {\"kyc_verified\", type logical}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fact_Transactions",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "transaction_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d3dbb552-24de-4e66-98bb-71155d478fa1",
+            "sourceColumn": "transaction_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "txn_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "d4897144-6cd0-4e34-afd0-07ad07b0af17",
+            "sourceColumn": "txn_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "user_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5377a7f7-236a-45da-aba9-897f3b38275b",
+            "sourceColumn": "user_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "merchant_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0491ca26-3992-46b3-88f2-2718a6c5e3d0",
+            "sourceColumn": "merchant_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "payment_method",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72e91d84-e447-4498-9d42-23c5150847e3",
+            "sourceColumn": "payment_method",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "amount_inr",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2960f1df-77bc-490f-a01f-634a8b43e768",
+            "sourceColumn": "amount_inr",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fraud_flag",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9a3aaa5b-ad02-47ea-9d65-90d7f939c1c1",
+            "sourceColumn": "fraud_flag",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fraud_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "02060022-dcfb-42cb-80a4-d8ad8aa02136",
+            "sourceColumn": "fraud_type",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ed652616-da76-4575-b744-76b4a26c5adb",
+        "partitions": [
+          {
+            "name": "Fact_Transactions",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\gutsy innovation\\Python\\Python_Sessions\\ai_projects\\powerbi_fraud_risk_mcp\\data\\Fact_Transactions.csv\"),[Delimiter=\",\", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"transaction_id\", Int64.Type}, {\"txn_date\", type date}, {\"user_id\", Int64.Type}, {\"merchant_id\", Int64.Type}, {\"payment_method\", type text}, {\"amount_inr\", type number}, {\"fraud_flag\", Int64.Type}, {\"fraud_type\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dim_Date",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "2e848f2fe9fc47b391dda54978d7f289"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isDataTypeInferred": true,
+            "isKey": true,
+            "isNameInferred": true,
+            "lineageTag": "67e25c46-446c-4f8b-85d4-5f912be0b8de",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "e7e60bc3-d856-40b4-a34a-de800d5c669d",
+            "sourceColumn": "[Year]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "58acf0b2-fcb3-4c8b-9482-1123e2a4fb8e",
+            "sourceColumn": "[Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "MonthNum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "50b88a58-042f-4166-bf4d-d4ecfd0219e0",
+            "sourceColumn": "[MonthNum]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "DayOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "2196bae8-c55c-4e02-a1ea-e579d425934a",
+            "sourceColumn": "[DayOfWeek]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "b282299c-f75a-41e8-8989-b86fb92fe93a",
+        "partitions": [
+          {
+            "name": "Dim_Date",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "",
+                "ADDCOLUMNS(",
+                "    CALENDAR(DATE(2026, 7, 1), DATE(2026, 10, 31)),",
+                "    \"Year\", YEAR([Date]),",
+                "    \"Month\", FORMAT([Date], \"MMM YYYY\"),",
+                "    \"MonthNum\", MONTH([Date]),",
+                "    \"DayOfWeek\", FORMAT([Date], \"ddd\")",
+                ")"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Measures",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4fd94777-a541-4e01-a6d5-4be2b2fa8338",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "61160b64-822a-428f-a43e-0d0150736083",
+        "measures": [
+          {
+            "name": "Total GMV",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Core KPIs",
+            "expression": "SUM(Fact_Transactions[amount_inr])",
+            "formatString": "$#,##0.00",
+            "lineageTag": "a7b12732-dfc2-416e-ad9d-68201024b739"
+          },
+          {
+            "name": "Total Fraud Loss",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Core KPIs",
+            "expression": [
+              "CALCULATE(",
+              "    SUM(Fact_Transactions[amount_inr]),",
+              "    Fact_Transactions[fraud_flag] = 1",
+              ")"
+            ],
+            "formatString": "$#,##0.00",
+            "lineageTag": "550b2bf5-b5c3-409a-97e6-a36f08e67fea"
+          },
+          {
+            "name": "Fraud Loss Rate %",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Core KPIs",
+            "expression": "DIVIDE([Total Fraud Loss], [Total GMV], 0)",
+            "formatString": "0.00%",
+            "lineageTag": "e2a5141f-fe18-4cc8-aa9f-195633d77476"
+          },
+          {
+            "name": "Fraud Txn Count",
+            "displayFolder": "Core KPIs",
+            "expression": "CALCULATE(COUNTROWS(Fact_Transactions), Fact_Transactions[fraud_flag] = 1)",
+            "lineageTag": "affc5e00-81aa-46e3-8645-dc215b0fa5dc"
+          },
+          {
+            "name": "MTD Fraud Loss",
+            "displayFolder": "Time Intelligence",
+            "expression": "TOTALMTD([Total Fraud Loss], Dim_Date[Date])",
+            "formatString": "$#,##0.00",
+            "lineageTag": "1d0dedfa-83c4-4726-9cf7-198f1cc945d0"
+          },
+          {
+            "name": "Prev Month Fraud Loss",
+            "displayFolder": "Time Intelligence",
+            "expression": "CALCULATE([Total Fraud Loss], PREVIOUSMONTH(Dim_Date[Date]))",
+            "formatString": "$#,##0.00",
+            "lineageTag": "f8ca4622-ec31-4244-a6aa-90fec7301eb7"
+          },
+          {
+            "name": "MoM Fraud Loss Change %",
+            "displayFolder": "Time Intelligence",
+            "expression": "DIVIDE([Total Fraud Loss] - [Prev Month Fraud Loss], [Prev Month Fraud Loss], 0)",
+            "formatString": "0.00%",
+            "lineageTag": "57b19579-bb85-4887-b31e-6bd0be92b8bd"
+          },
+          {
+            "name": "7-Day Rolling Fraud Loss",
+            "displayFolder": "Time Intelligence",
+            "expression": "CALCULATE([Total Fraud Loss], DATESINPERIOD(Dim_Date[Date], LASTDATE(Dim_Date[Date]), -7, DAY))",
+            "formatString": "$#,##0.00",
+            "lineageTag": "dda66384-33e2-48bc-8ed9-3956e084a296"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Measures",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
