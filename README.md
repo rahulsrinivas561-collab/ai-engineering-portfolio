@@ -57,8 +57,6 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 
 ## 📂 Repository Structure
 
-## 📂 Repository Structure
-
 ```text
 ai_engineering_portfolio/
 ├── 📁 app.py                         # Core application entry point & router
