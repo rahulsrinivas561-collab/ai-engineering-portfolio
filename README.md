@@ -57,36 +57,33 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 ## 📂 Repository Structure
 
 ai_engineering_portfolio/
+├── 📁 app.py                         # Core application entry point & router
+├── 📁 fintech_app.py                 # Streamlit financial intelligence dashboard (Project 1)
+├── 📁 risk_dashboard.py              # Live risk and fraud analytics dashboard
 │
-├── app.py                           # Core application entry point & router
-├── fintech_app.py                   # Streamlit financial intelligence dashboard (Project 1)
-├── risk_dashboard.py                # Live risk and fraud analytics dashboard
+├── 📂 logistics_cost_engine/         # Freight cost calculation engine & Google APIs integration
+│   └── 📁 shipment_cost_calculator.py    # Python vectorized shipping cost engine
+│   └── 📁 README.md                  # Project-specific documentation & setup guide
 │
-├── logistics_cost_engine/           # Freight cost calculation engine & Google APIs integration
-│   ├── shipment_cost_calculator.py  # Python vectorized shipping cost engine
-│   └── README.md                    # Project-specific documentation & setup guide
+├── 📁 ai_agent.py                    # Core tool-calling agent implementation
+├── 📁 super_agent.py                 # Advanced multi-agent orchestrator
+├── 📁 fraud_mcp_server.py            # Model Context Protocol (MCP) server
+├── 📁 tool_calling.py                # Function calling schemas and utilities
 │
-├── ai_agent.py                      # Core tool-calling agent implementation
-├── super_agent.py                   # Advanced multi-agent orchestrator
-├── fraud_mcp_server.py              # Model Context Protocol (MCP) server
-├── tool_calling.py                  # Function calling schemas and utilities
+├── 📁 rag_pipeline.py                # RAG retrieval and vector generation pipeline
+├── 📁 test_hybrid_search.py          # BM25 + ChromaDB Hybrid Search with RRF
+├── 📁 test_chroma.py                 # Vector store diagnostics and test script
+├── 📁 test_langgraph.py              # Stateful graph agent validation
+├── 📁 test_observability.py          # Langfuse LLM telemetry and tracing test
 │
-├── rag_pipeline.py                  # RAG retrieval and vector generation pipeline
-├── test_hybrid_search.py            # BM25 + ChromaDB Hybrid Search with RRF
-├── test_chroma.py                   # Vector store diagnostics and test script
-├── test_langgraph.py                # Stateful graph agent validation
-├── test_observability.py            # Langfuse LLM telemetry and tracing test
+├── 📁 generate_and_analyze_bigdata.py# Big data generator and processing pipeline
+├── 📊 fraud_million_rows.parquet     # 1M+ row columnar dataset for performance testing
+├── 📊 fintech_portfolio.csv          # Financial portfolio sample dataset
 │
-├── generate_and_analyze_bigdata.py  # Big data generator and processing pipeline
-├── fraud_million_rows.parquet       # 1M+ row columnar dataset for performance testing
-├── fintech_portfolio.csv            # Financial portfolio sample dataset
-│
-├── test_ai.py                       # API connection and model validation script
-├── requirements.txt                 # Project dependencies
-├── .env.example                     # Template for environment variables
-└── README.md                        # Main documentation
-
----
+├── 📁 test_ai.py                     # API connection and model validation script
+├── 📋 requirements.txt               # Project dependencies
+├── ⚙️ .env.example                   # Template for environment variables
+└── 📖 README.md                      # Main documentation
 
 ## ⚙️ Getting Started & Installation Instructions
 
