@@ -27,11 +27,11 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"3b84386bcda81210a0c5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":340.30988793782143,\"y\":0,\"z\":1000,\"width\":289.53784820516256,\"height\":171.52716125898257,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Fraud Loss\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Fraud Loss\"},\"Name\":\"_Measures.Total Fraud Loss\",\"NativeReferenceName\":\"Total Fraud Loss\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Fraud Loss\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"3b84386bcda81210a0c5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":555.7480024791035,\"y\":0,\"z\":1000,\"width\":289.53784820516256,\"height\":171.52716125898257,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Fraud Loss\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Fraud Loss\"},\"Name\":\"_Measures.Total Fraud Loss\",\"NativeReferenceName\":\"Total Fraud Loss\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Fraud Loss\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 171.53,
           "width": 289.54,
-          "x": 340.31,
+          "x": 555.75,
           "y": 0.00,
           "z": 1000.00
         },
@@ -54,11 +54,11 @@
           "z": 5000.00
         },
         {
-          "config": "{\"name\":\"7c51ac9910ed4c22a425\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.30543225179652,\"y\":0,\"z\":0,\"width\":296.3989346555219,\"height\":139.9661635873298,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total GMV\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total GMV\"},\"Name\":\"_Measures.Total GMV\",\"NativeReferenceName\":\"Total GMV\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total GMV\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"7c51ac9910ed4c22a425\",\"layouts\":[{\"id\":0,\"position\":{\"x\":131.7328598468986,\"y\":0,\"z\":0,\"width\":296.3989346555219,\"height\":139.9661635873298,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total GMV\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total GMV\"},\"Name\":\"_Measures.Total GMV\",\"NativeReferenceName\":\"Total GMV\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total GMV\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 139.97,
           "width": 296.40,
-          "x": 34.31,
+          "x": 131.73,
           "y": 0.00,
           "z": 0.00
         },
@@ -72,22 +72,13 @@
           "z": 5001.00
         },
         {
-          "config": "{\"name\":\"be688898d24d7726a4b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":639.453257173487,\"y\":0,\"z\":2000,\"width\":293.65450007537817,\"height\":139.9661635873298,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Fraud Loss Rate %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Fraud Loss Rate %\"},\"Name\":\"_Measures.Fraud Loss Rate %\",\"NativeReferenceName\":\"Fraud Loss Rate %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Fraud Loss Rate %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"be688898d24d7726a4b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":905.663411447428,\"y\":0,\"z\":2000,\"width\":293.65450007537817,\"height\":139.9661635873298,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Fraud Loss Rate %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Fraud Loss Rate %\"},\"Name\":\"_Measures.Fraud Loss Rate %\",\"NativeReferenceName\":\"Fraud Loss Rate %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Fraud Loss Rate %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 139.97,
           "width": 293.65,
-          "x": 639.45,
+          "x": 905.66,
           "y": 0.00,
           "z": 2000.00
-        },
-        {
-          "config": "{\"name\":\"dbfdc7f45b001a27c292\",\"layouts\":[{\"id\":0,\"position\":{\"x\":942.7132782793682,\"y\":0,\"z\":3000,\"width\":282.6767617548033,\"height\":139.9661635873298,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.MoM Fraud Loss Change %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"MoM Fraud Loss Change %\"},\"Name\":\"_Measures.MoM Fraud Loss Change %\",\"NativeReferenceName\":\"MoM Fraud Loss Change %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"MoM Fraud Loss Change %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 139.97,
-          "width": 282.68,
-          "x": 942.71,
-          "y": 0.00,
-          "z": 3000.00
         },
         {
           "config": "{\"name\":\"e154fadcb0bd01583369\",\"layouts\":[{\"id\":0,\"position\":{\"x\":89.19412385467093,\"y\":171.52716125898257,\"z\":4000,\"width\":550.2591333188161,\"height\":271.6990234342284,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Date.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Fraud Loss\"},{\"queryRef\":\"_Measures.7-Day Rolling Fraud Loss\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Date\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"Dim_Date.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Fraud Loss\"},\"Name\":\"_Measures.Total Fraud Loss\",\"NativeReferenceName\":\"Total Fraud Loss\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"7-Day Rolling Fraud Loss\"},\"Name\":\"_Measures.7-Day Rolling Fraud Loss\",\"NativeReferenceName\":\"7-Day Rolling Fraud Loss\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
