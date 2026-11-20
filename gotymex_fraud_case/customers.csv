@@ -1,0 +1,201 @@
+customer_id,account_age,customer_demographics
+1,183,N/A
+2,1993,"{'sex': 'F', 'address': '13332 Jones Brooks Apt. 371\nNorth Jacqueline, MD 30315', 'birthdate': '1968-11-22'}"
+3,41,"{'sex': 'M', 'address': '831 Michael Row\nHubbardfurt, WV 43616', 'birthdate': '1950-05-30'}"
+4,824,N/A
+5,148,"{'sex': 'M', 'address': '65816 York Park Apt. 952\nLake Robertmouth, WY 33241', 'birthdate': '1946-03-15'}"
+6,1644,N/A
+7,364,N/A
+8,1228,N/A
+9,647,N/A
+10,1390,"{'sex': 'M', 'address': '86600 West Groves\nKaufmanchester, WI 10343', 'birthdate': '1983-10-18'}"
+11,396,N/A
+12,230,N/A
+13,1527,N/A
+14,1643,N/A
+15,505,"{'sex': 'M', 'address': '5023 Bond Via Apt. 755\nJonesshire, AR 01831', 'birthdate': '2014-07-18'}"
+16,1719,"{'sex': 'M', 'address': '555 Stout Oval\nLake Natalie, MA 67338', 'birthdate': '1919-02-09'}"
+17,712,"{'sex': 'M', 'address': '563 Larry Gateway Apt. 369\nNew Cynthiahaven, MA 24931', 'birthdate': '1916-06-25'}"
+18,1929,N/A
+19,1989,"{'sex': 'M', 'address': '74198 Montoya Port\nLake Taylor, WY 46647', 'birthdate': '2002-10-27'}"
+20,1135,"{'sex': 'M', 'address': '114 Jessica Row Apt. 336\nSmithside, TN 50811', 'birthdate': '1990-02-28'}"
+21,33,N/A
+22,870,N/A
+23,1938,N/A
+24,1527,"{'sex': 'F', 'address': '694 Miller Field\nSouth Vickiport, CA 02388', 'birthdate': '2019-11-06'}"
+25,1322,"{'sex': 'F', 'address': '58204 Tom Divide Apt. 445\nNorth Patricia, GA 60821', 'birthdate': '1928-01-20'}"
+26,133,"{'sex': 'F', 'address': '82815 Cole Highway Apt. 122\nMatthewsfurt, WY 41254', 'birthdate': '2000-04-17'}"
+27,1493,N/A
+28,1053,N/A
+29,527,"{'sex': 'F', 'address': '592 Rachel Pass Apt. 592\nMaymouth, VA 39592', 'birthdate': '1953-10-20'}"
+30,1151,N/A
+31,1564,"{'sex': 'M', 'address': '18134 Mccann Drives Apt. 512\nWest Paulton, CA 93203', 'birthdate': '1983-05-12'}"
+32,296,N/A
+33,1730,N/A
+34,383,N/A
+35,1629,"{'sex': 'F', 'address': '66746 Cooley Key\nGriffinmouth, OK 75862', 'birthdate': '2022-12-01'}"
+36,1764,"{'sex': 'F', 'address': '84072 Richard Estates\nSouth Heathertown, FL 23715', 'birthdate': '1915-10-02'}"
+37,1699,"{'sex': 'M', 'address': '5403 Taylor Key Suite 733\nPort Christophershire, AR 15973', 'birthdate': '1965-03-03'}"
+38,500,N/A
+39,1095,N/A
+40,131,N/A
+41,892,"{'sex': 'M', 'address': '70575 Arias Rapid Apt. 570\nEast Luis, OH 82100', 'birthdate': '2002-11-28'}"
+42,1214,N/A
+43,544,N/A
+44,453,"{'sex': 'M', 'address': '188 Griffin Cliffs Suite 327\nJamesbury, PA 05228', 'birthdate': '1934-12-29'}"
+45,966,N/A
+46,1242,N/A
+47,642,N/A
+48,367,N/A
+49,429,"{'sex': 'M', 'address': 'Unit 6339 Box 8442\nDPO AP 51757', 'birthdate': '1982-12-08'}"
+50,607,"{'sex': 'F', 'address': '6488 Tyler Lights\nWilliamshire, CT 91330', 'birthdate': '2013-04-01'}"
+51,1580,"{'sex': 'M', 'address': '765 Linda Cliff Apt. 717\nNorth Danielle, DE 58757', 'birthdate': '1990-08-28'}"
+52,1886,N/A
+53,769,"{'sex': 'M', 'address': '856 Ayala Parkway Apt. 037\nRogersmouth, WI 35017', 'birthdate': '2007-12-09'}"
+54,1083,N/A
+55,1592,N/A
+56,1525,N/A
+57,1321,N/A
+58,1178,N/A
+59,220,"{'sex': 'M', 'address': '59946 Evans Dam\nEast Debra, VA 91356', 'birthdate': '1926-09-08'}"
+60,1299,N/A
+61,256,N/A
+62,1300,N/A
+63,1651,N/A
+64,1751,N/A
+65,875,N/A
+66,981,"{'sex': 'M', 'address': '102 Thomas Mission\nSouth Deborahland, OK 38048', 'birthdate': '1969-04-15'}"
+67,1166,N/A
+68,1203,N/A
+69,1466,"{'sex': 'M', 'address': '10848 Christopher Villages\nFarrellbury, SD 51604', 'birthdate': '2021-09-02'}"
+70,1436,N/A
+71,95,N/A
+72,506,N/A
+73,1853,"{'sex': 'M', 'address': '33124 Jennifer Stream Suite 691\nWest Cynthiaside, ID 15292', 'birthdate': '1989-08-24'}"
+74,1179,"{'sex': 'F', 'address': '90441 Perry Mill\nNorth Bryan, CA 96575', 'birthdate': '2001-02-15'}"
+75,259,"{'sex': 'M', 'address': '8654 Johnson View\nVincentbury, SC 35518', 'birthdate': '1930-04-28'}"
+76,1367,N/A
+77,473,"{'sex': 'M', 'address': '8884 Holly Mountains Apt. 657\nWest Deborah, CT 14477', 'birthdate': '1966-10-02'}"
+78,1633,N/A
+79,1444,N/A
+80,76,"{'sex': 'F', 'address': '493 Wolfe Turnpike\nScottport, NJ 62091', 'birthdate': '1986-10-05'}"
+81,1854,"{'sex': 'M', 'address': '02072 Amanda Burg Apt. 269\nJessechester, PA 01575', 'birthdate': '1991-02-06'}"
+82,348,N/A
+83,891,N/A
+84,878,"{'sex': 'F', 'address': '73437 Allen Well Suite 030\nWalkerchester, VT 32579', 'birthdate': '1969-06-11'}"
+85,639,N/A
+86,1433,"{'sex': 'F', 'address': '8720 Watson Forks Apt. 593\nWendyfort, OH 77531', 'birthdate': '1922-11-09'}"
+87,189,"{'sex': 'F', 'address': '77598 Mary Vista\nSouth Susan, WA 99254', 'birthdate': '2013-04-18'}"
+88,1746,"{'sex': 'F', 'address': '0507 Lopez Freeway Apt. 081\nWest Amyton, UT 82403', 'birthdate': '2009-08-29'}"
+89,1640,"{'sex': 'F', 'address': '0078 Hodges Land\nEast Gregoryview, AK 31035', 'birthdate': '2021-03-17'}"
+90,1307,"{'sex': 'M', 'address': '3492 Lopez Points Apt. 837\nWest Richard, AL 67699', 'birthdate': '1973-12-04'}"
+91,343,"{'sex': 'F', 'address': '000 Campbell Corner Apt. 378\nEast Courtney, MS 37806', 'birthdate': '2021-06-19'}"
+92,1811,N/A
+93,1358,"{'sex': 'M', 'address': '6705 Anita Knoll\nEast Richard, ID 83086', 'birthdate': '1963-08-26'}"
+94,256,N/A
+95,1276,N/A
+96,61,N/A
+97,140,"{'sex': 'F', 'address': 'PSC 8590, Box 0258\nAPO AE 23383', 'birthdate': '1980-01-25'}"
+98,1277,"{'sex': 'M', 'address': '6355 Velez Heights Apt. 621\nAllisonberg, GA 52429', 'birthdate': '1976-01-23'}"
+99,1687,N/A
+100,874,N/A
+101,1956,"{'sex': 'M', 'address': '733 Williams Mall\nPort Douglas, NC 39897', 'birthdate': '1947-07-22'}"
+102,792,N/A
+103,585,"{'sex': 'F', 'address': '950 Charles Common\nNew Stephen, NH 76755', 'birthdate': '1976-01-22'}"
+104,932,"{'sex': 'F', 'address': '685 Ashley Points Suite 302\nNorth Cole, FL 68064', 'birthdate': '1916-04-04'}"
+105,625,"{'sex': 'F', 'address': '1452 Woodard Trace Suite 852\nSmithhaven, OK 66414', 'birthdate': '1955-07-17'}"
+106,685,"{'sex': 'F', 'address': '84553 Cesar Cape\nNorth Brittanyshire, SD 47572', 'birthdate': '1977-02-24'}"
+107,102,"{'sex': 'F', 'address': '64865 Baker Coves\nNew Richardton, RI 63215', 'birthdate': '1931-12-01'}"
+108,844,N/A
+109,441,"{'sex': 'M', 'address': '881 Patricia Square\nDebraburgh, VA 07224', 'birthdate': '1994-08-16'}"
+110,1218,"{'sex': 'M', 'address': 'Unit 0775 Box 5746\nDPO AE 72853', 'birthdate': '1945-09-17'}"
+111,1052,"{'sex': 'F', 'address': '222 Stacey Estates Apt. 359\nSouth Sara, MS 36385', 'birthdate': '1978-12-22'}"
+112,239,N/A
+113,34,"{'sex': 'F', 'address': '998 Stephens Square Suite 547\nRogersside, DC 22137', 'birthdate': '1936-07-10'}"
+114,1915,"{'sex': 'M', 'address': 'Unit 9891 Box 4452\nDPO AP 39767', 'birthdate': '1945-12-30'}"
+115,1874,"{'sex': 'M', 'address': '5682 Bright Tunnel\nArmstrongfort, AK 92899', 'birthdate': '1963-08-20'}"
+116,1777,"{'sex': 'M', 'address': '7852 Small Haven Apt. 995\nMarkstad, WI 95345', 'birthdate': '1971-07-26'}"
+117,1343,N/A
+118,870,"{'sex': 'F', 'address': '53503 Garrison Shores Suite 008\nCannonland, MT 16598', 'birthdate': '2012-11-10'}"
+119,1103,"{'sex': 'F', 'address': 'USS Turner\nFPO AE 13541', 'birthdate': '1964-07-25'}"
+120,955,N/A
+121,962,"{'sex': 'M', 'address': '2299 Mills Point\nBakerside, MI 87915', 'birthdate': '2004-02-24'}"
+122,1222,N/A
+123,464,"{'sex': 'M', 'address': '417 Michael Unions\nSouth Deborahmouth, TX 28754', 'birthdate': '1952-12-15'}"
+124,422,N/A
+125,1453,"{'sex': 'M', 'address': '9941 Dixon Greens Apt. 264\nStewartland, WA 93815', 'birthdate': '1921-11-30'}"
+126,1707,N/A
+127,469,N/A
+128,985,"{'sex': 'F', 'address': 'PSC 3865, Box 5572\nAPO AA 11174', 'birthdate': '1990-05-25'}"
+129,1720,"{'sex': 'M', 'address': '863 Torres Common\nWest Benjaminfurt, TN 78260', 'birthdate': '1982-03-27'}"
+130,752,"{'sex': 'M', 'address': '46860 Shelley Ridges Suite 449\nTuckerbury, IN 88516', 'birthdate': '1938-08-10'}"
+131,657,N/A
+132,466,N/A
+133,1821,"{'sex': 'F', 'address': '078 Cheryl Forest Apt. 717\nNorth Calebville, FL 33769', 'birthdate': '2020-02-27'}"
+134,1013,N/A
+135,1769,N/A
+136,1496,N/A
+137,1689,"{'sex': 'M', 'address': '992 Rice Ways\nMichaelborough, TN 45552', 'birthdate': '2020-08-17'}"
+138,1569,"{'sex': 'M', 'address': 'PSC 3713, Box 0073\nAPO AP 23732', 'birthdate': '2018-12-17'}"
+139,1607,"{'sex': 'M', 'address': '52553 Brittany Parkway Suite 282\nNorth Melissa, HI 87349', 'birthdate': '1915-02-27'}"
+140,573,N/A
+141,1547,"{'sex': 'M', 'address': '08872 Brittany Drives\nSouth David, HI 56481', 'birthdate': '1919-07-29'}"
+142,1621,"{'sex': 'M', 'address': '0626 Stevens Wall\nJosephton, AR 44364', 'birthdate': '1951-04-22'}"
+143,355,"{'sex': 'M', 'address': '8466 Mejia Mews Apt. 822\nBethanystad, MD 67911', 'birthdate': '1923-12-04'}"
+144,1718,N/A
+145,1789,"{'sex': 'M', 'address': '5755 Daniel Haven\nLozanoland, FL 58490', 'birthdate': '1937-06-16'}"
+146,1862,"{'sex': 'F', 'address': '22610 Brendan Forges\nLake Mirandaville, WI 60199', 'birthdate': '1990-03-12'}"
+147,377,N/A
+148,599,N/A
+149,768,N/A
+150,233,"{'sex': 'F', 'address': '40362 David Glens\nAmyport, ME 84892', 'birthdate': '1907-05-03'}"
+151,1426,N/A
+152,1624,N/A
+153,151,N/A
+154,470,N/A
+155,730,"{'sex': 'M', 'address': '847 Collins Spring\nVegachester, TN 41244', 'birthdate': '1975-09-25'}"
+156,326,"{'sex': 'F', 'address': 'USS Johnson\nFPO AP 60895', 'birthdate': '1928-10-11'}"
+157,740,N/A
+158,102,N/A
+159,900,N/A
+160,1014,N/A
+161,1269,N/A
+162,1167,N/A
+163,334,"{'sex': 'M', 'address': '3849 Steven Ranch Apt. 547\nSouth John, NY 58961', 'birthdate': '1971-04-27'}"
+164,1465,"{'sex': 'M', 'address': '8788 Linda Islands Apt. 307\nShahport, ND 90230', 'birthdate': '1928-04-27'}"
+165,944,"{'sex': 'M', 'address': '58761 Brooks Station\nGeorgeside, CO 18132', 'birthdate': '1963-01-10'}"
+166,944,N/A
+167,718,"{'sex': 'M', 'address': 'USNV Gay\nFPO AA 39556', 'birthdate': '1983-04-01'}"
+168,1606,"{'sex': 'M', 'address': '988 Mike Shore\nNew Danielchester, SC 48957', 'birthdate': '2019-09-18'}"
+169,696,N/A
+170,1909,N/A
+171,1348,N/A
+172,720,N/A
+173,1257,"{'sex': 'M', 'address': '37974 Parker Harbors Apt. 355\nPratttown, NY 22038', 'birthdate': '2005-07-28'}"
+174,1952,"{'sex': 'F', 'address': 'USNV English\nFPO AE 03379', 'birthdate': '1971-01-14'}"
+175,1398,N/A
+176,1143,N/A
+177,117,N/A
+178,142,N/A
+179,175,"{'sex': 'F', 'address': '839 Adams Streets\nJohnsonhaven, MO 46403', 'birthdate': '1931-05-30'}"
+180,1397,"{'sex': 'M', 'address': '94009 Allison Plaza\nSouth Kaitlyn, OH 66820', 'birthdate': '1928-09-01'}"
+181,1759,"{'sex': 'M', 'address': '696 Hill Village\nHollyland, RI 51514', 'birthdate': '1921-05-04'}"
+182,1203,N/A
+183,430,N/A
+184,1114,N/A
+185,1848,N/A
+186,422,"{'sex': 'F', 'address': '5904 Smith Valleys\nMaldonadobury, VA 01155', 'birthdate': '1971-05-10'}"
+187,1446,N/A
+188,1418,N/A
+189,39,"{'sex': 'F', 'address': '97949 Smith Corners Apt. 458\nNorth Tara, ME 72866', 'birthdate': '1925-07-24'}"
+190,131,N/A
+191,1361,"{'sex': 'M', 'address': 'Unit 8403 Box 4936\nDPO AA 08734', 'birthdate': '1960-11-17'}"
+192,674,N/A
+193,1924,N/A
+194,749,N/A
+195,657,N/A
+196,896,N/A
+197,844,"{'sex': 'F', 'address': '63205 Lee Harbors\nSouth Ericview, MN 40516', 'birthdate': '1933-08-24'}"
+198,30,N/A
+199,1552,"{'sex': 'F', 'address': '013 Jimmy Locks\nArnoldport, MT 18244', 'birthdate': '1979-10-04'}"
+200,1382,"{'sex': 'F', 'address': '0355 Mathew Orchard\nAndrewsstad, AK 38961', 'birthdate': '2001-08-06'}"
