@@ -29,9 +29,9 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 * **Description:** High-precision retrieval engine combining ChromaDB vector search with BM25 keyword matching via Reciprocal Rank Fusion (RRF).
 * **Key Features:** Dense and sparse retrieval integration, local embedding storage, and precise document chunking.
 
-### 5. MCP Server & Observability (`fraud_mcp_server.py` & `test_observability.py`)
-* **Description:** Production Model Context Protocol (MCP) server implementation and Langfuse LLM telemetry integration.
-* **Key Features:** Secure tool endpoint exposure, token cost tracking, and execution latency tracing.
+### 5. MCP Servers, Observability & Power BI Modeling (`fraud_mcp_server.py` & `powerbi_fraud_risk_mcp/`)
+* **Description:** Production Model Context Protocol (MCP) server implementations, LLM telemetry integration, and Power BI semantic modeling automation.
+* **Key Features:** Secure tool endpoint exposure, token cost tracking, Langfuse tracing, Git-tracked TMDL Star Schema modeling, and MCP-generated time-intelligence DAX measures (`MTD`, `MoM %`, `7-Day Rolling`).
 
 ### 6. Automated Logistics Cost Engine (`logistics_cost_engine/`)
 * **Description:** An end-to-end operational pipeline automating freight cost calculations, shipment tracking, and location logging across Google Apps Script, AppSheet, and Python.
@@ -44,6 +44,7 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 * **Core Language:** Python (3.10+)
 * **LLM & Inference:** Groq API (High-speed Llama 3 inference engine)
 * **Agent Frameworks & Protocols:** LangGraph, Model Context Protocol (MCP), Custom Tool-Calling
+* **Business Intelligence & Semantic Modeling:** Power BI Desktop (`.pbip` / TMDL), DAX, Power BI Authoring MCP
 * **Vector Database & Search:** ChromaDB, BM25, Reciprocal Rank Fusion (RRF)
 * **Data Engineering & Cloud Services:** Pandas, NumPy, Apache Parquet (1M+ rows), **Google Cloud APIs (Google Sheets API, Google Drive API)**
 * **Low-Code, Automation & Scripting:** **Google Apps Script**, AppSheet, Low-Code Frontend Logic
@@ -56,6 +57,7 @@ A production-grade collection of generative AI applications, autonomous multi-ag
 
 ## 📂 Repository Structure
 
+```text
 ai_engineering_portfolio/
 ├── 📁 app.py                         # Core application entry point & router
 ├── 📁 fintech_app.py                 # Streamlit financial intelligence dashboard (Project 1)
@@ -64,6 +66,11 @@ ai_engineering_portfolio/
 ├── 📂 logistics_cost_engine/         # Freight cost calculation engine & Google APIs integration
 │   └── 📁 shipment_cost_calculator.py    # Python vectorized shipping cost engine
 │   └── 📁 README.md                  # Project-specific documentation & setup guide
+│
+├── 📂 powerbi_fraud_risk_mcp/        # Power BI PBIP Star Schema & MCP semantic modeling
+│   ├── 📁 generate_star_schema.py    # Synthetic transaction & dimension generator
+│   ├── 📊 FraudRiskReport.pbip       # Power BI Project file with TMDL model
+│   └── 📖 README.md                  # Project-specific documentation & DAX reference
 │
 ├── 📁 ai_agent.py                    # Core tool-calling agent implementation
 ├── 📁 super_agent.py                 # Advanced multi-agent orchestrator
@@ -115,7 +122,6 @@ Create a file named .env in the root folder and add your API keys:
 GROQ_API_KEY=your_actual_groq_api_key_here
 LANGFUSE_PUBLIC_KEY=your_langfuse_public_key_here
 LANGFUSE_SECRET_KEY=your_langfuse_secret_key_here
-
 
 
 
