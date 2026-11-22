@@ -112,7 +112,7 @@ with tab1:
                 executed_code = ""
                 for _ in range(3):
                     response = client.chat.completions.create(
-                        model="llama-3.1-8b-instant",
+                        model="openai/gpt-oss-120b",
                         messages=messages,
                         tools=tools_metadata,
                         tool_choice="auto",
@@ -160,7 +160,7 @@ with tab2:
             rag_prompt = f"Answer the user question strictly using the following audit documents:\n\nDocuments:\n" + "\n".join(retrieved_docs) + f"\n\nQuestion: {rag_query}"
             
             completion = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
+                model="openai/gpt-oss-120b",
                 messages=[{"role": "user", "content": rag_prompt}]
             )
             
